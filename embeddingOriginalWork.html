@@ -2,3 +2,40 @@
 <html>
 	<head>
 		<title>Welcome to the internet</title>
+	</head>
+	<body>
+		<h1>Welcome to the INTERNET</h1>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/cOAqq9vtdcg?start=180" frameborder="0" allowfullscreen></iframe>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+ <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+       <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+  <h2 style="background-color:orange">
+  Hey look I changed this to orange!! Thats 3 things. 
+</h2>
+</html>   
